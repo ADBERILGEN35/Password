@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "password_model")
+@Table(name = "PASSWORDMODEL")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -15,5 +15,6 @@ public class PasswordModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "GENERATEDPASSWORD")
     private String generatedPassword;
 }
